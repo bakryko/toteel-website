@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجاتنا - توتيل</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="display:flex; align-items:center; gap:12px; text-decoration:none; flex-direction: row;">
+            <img src="images/logo.png" style="height:60px; width:auto; object-fit:contain; mix-blend-mode: multiply;" alt="" onerror="this.style.display='none'">
+            <div style="display:flex; flex-direction:column; line-height:1.1; text-align: right;">
+                <span class="font-en" style="font-size:1.8rem; font-weight:900; color:var(--clr-charcoal); letter-spacing: 1px;">TOTEEL</span>
+                <span data-translate="logo-subtitle" style="font-size:0.9rem; letter-spacing:0; color:var(--clr-gold); font-weight:bold;">للسيراميك والبورسلان</span>
+            </div>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html#home" data-translate="nav-home">الرئيسية</a></li>
+            <li><a href="products.html" class="active" data-translate="nav-products">منتجاتنا</a></li>
+            <li><a href="index.html#about" data-translate="nav-about">من نحن</a></li>
+            <li><a href="#contact" data-translate="nav-contact">التواصل</a></li>
+        </ul>
+
+        <div class="theme-controls">
+            <button class="theme-toggle" title="تغيير المظهر"><i class="fa-solid fa-moon"></i></button>
+            <button class="lang-toggle" title="Change Language">EN</button>
+        </div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="height: 50vh;">
+        <div class="hero-content animate-up">
+            <h1 class="font-en" data-translate="nav-products">منتجاتنا</h1>
+            <p class="subtitle font-ar" data-translate="cat-subtitle">تصفح الأقسام المميزة لدينا</p>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+        
+        <div class="product-filters animate-up">
+            <button class="filter-btn active" data-filter="all" data-translate="filter-all">عرض الكل</button>
+            <button class="filter-btn" data-filter="porcelain" data-translate="filter-porcelain">بورسلان</button>
+            <button class="filter-btn" data-filter="wall" data-translate="filter-wall">حوائط</button>
+            <button class="filter-btn" data-filter="ceramic" data-translate="filter-ceramic">أرضيات</button>
+            <button class="filter-btn" data-filter="decor" data-translate="filter-decor">سجاد وديكور</button>
+        </div>
+
+        <div class="products-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card" data-category="porcelain">
+                <div class="product-img-wrap">
+                    <img src="images/1.jpeg" alt="بورسلين رمادي">
+                    <div class="product-tags">
+                        <span class="tag premium" data-translate="tag-premium">فرز أول</span>
+                        <span class="tag text-gold" data-translate="tag-laser">قص ليزر</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p1-title">بورسلين رمادي 60*60</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p1-desc">بورسلين بأرضية رمادية فاخرة وحواف مقصوصة بالليزر لتركيب بدون فواصل.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 60x60</div>
+                        <div class="spec-item"><i class="fa-solid fa-star"></i> <span data-translate="tag-premium">فرز أول</span></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p1-wa" data-product="بورسلين رمادي مقاس 60x60 قص ليزر وفرز أول"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="ceramic">
+                <div class="product-img-wrap">
+                    <img src="images/2.jpeg" alt="سيراميك بيج وأبيض">
+                    <div class="product-tags">
+                        <span class="tag premium" data-translate="tag-premium">فرز أول</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p2-title">سيراميك سادة (بيج وأبيض)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p2-desc">سيراميك أرضيات سادة بألوان البيج والأبيض النقي لإضاءة أفضل للمكان.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 50x50</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p2-wa" data-product="سيراميك أرضيات سادة بيج وأبيض مقاس 50x50"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="decor">
+                <div class="product-img-wrap">
+                    <img src="images/3.jpeg" alt="ديكور رايش واليفني">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-decor">سجاد / ديكور</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p3-title">ديكور وسجاد (رايش واليفني)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p3-desc">تشكيلة فاخرة بتصاميم كلاسيكية وهندسية (رايش واليفني) لمنتصف الصالات.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 50x50</div>
+                        <div class="spec-item"><i class="fa-solid fa-shapes"></i> <span data-translate="p3-spec">زخرفي متداخل</span></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p3-wa" data-product="سيراميك سجاد رايش واليفني مقاس 50x50"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="ceramic">
+                <div class="product-img-wrap">
+                    <img src="images/4.jpeg" alt="سيراميك أبيض مقصوص ليزر">
+                    <div class="product-tags">
+                        <span class="tag premium" data-translate="tag-premium">فرز أول</span>
+                        <span class="tag text-gold" data-translate="tag-laser">قص ليزر</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p4-title">سيراميك أبيض 40x40 (ليزر)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p4-desc">سيراميك أبيض ناصع بمقاس 40x40، مقصوص بالليزر ليعطي استمرارية وبلا فواصل.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 40x40</div>
+                        <div class="spec-item"><i class="fa-solid fa-star"></i> <span data-translate="tag-premium">فرز أول</span></div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p4-wa" data-product="سيراميك أبيض سادة مقاس 40x40 وتعديل ليزر"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/5.jpeg" alt="حوائط رخامية ورق ذهبي">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p5-title">حوائط رخامية (أوراق ذهبية)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p5-desc">سيراميك حوائط غامق بتأثير الرخام مع حزام أوراق الشجر الذهبي.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p5-wa" data-product="سيراميك حوائط رخامي ورق ذهبي مقاس 30x45 -- الرمز 5"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/6.jpeg" alt="حوائط كاروهات">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p6-title">حوائط المربعات (كاروهات وأزرق)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p6-desc">طقم حوائط يتدرج بين الأزرق الغامق والفاتح يتوسطه حزام ديكور المربعات (كاروهات).</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p6-wa" data-product="سيراميك حوائط ديكور الكاروهات والأزرق مقاس 30x45 -- الرمز 6"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/7.jpeg" alt="حوائط الزهور الزرقاء">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p7-title">حوائط الزهور الزرقاء</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p7-desc">طقم يجمع بين الأزرق الداكن والسماوي الفاتح مع حزام متصل من الزهور الجميلة الملونة.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p7-wa" data-product="سيراميك حوائط ديكور الزهور الزرقاء مقاس 30x45 -- الرمز 7"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/8.jpeg" alt="حوائط خشبية ديكور هوم">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p8-title">حوائط خشبية (ديكور HOME)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p8-desc">طقم جدران بشكل الخشب الريفي الرائع يتوسطه حزام يحمل نقوش الأزهار وكلمة HOME.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p8-wa" data-product="سيراميك حوائط ديكور HOME الخشبي مقاس 30x45 -- الرمز 8"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/9.jpeg" alt="حوائط هندسية كلاسيكية">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p9-title">حوائط هندسية (السماوي والأزرق)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p9-desc">لمسة من اللون السماوي الناعم والأزرق يتخللها شريط ديكور لأشكال هندسية متشابكة بشكل دقيق.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p9-wa" data-product="سيراميك حوائط ديكور هندسي سماوي مقاس 30x45 -- الرمز 9"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/10.jpeg" alt="حوائط الملمس الحجري">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p10-title">حوائط الملمس الحجري (رمادي)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p10-desc">طقم حائط رمادي بدرجتين يحاكي الحجر الطبيعي وتفصل بينهما باقة ورد كلاسيكية للمسة طبيعية.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p10-wa" data-product="سيراميك حوائط رمادي حجري مع زهور مقاس 30x45 -- الرمز 10"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card" data-category="wall">
+                <div class="product-img-wrap">
+                    <img src="images/11.jpeg" alt="حوائط ترابية أوراق بنية">
+                    <div class="product-tags">
+                        <span class="tag text-gold" data-translate="tag-wall">حوائط</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title font-en" data-translate="p11-title">حوائط ترابية (ديكور ورق الشجر)</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;" data-translate="p11-desc">ألوان بيج وترابية ناعمة تضفي اتساعاً للمكان مع حزام ديكور مميز لأوراق شجر ذهبية وبنية.</p>
+                    <div class="product-specs">
+                        <div class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 30x45</div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-whatsapp req-whatsapp" data-wa-key="p11-wa" data-product="سيراميك حوائط ديكور ورق الشجر البني والذهبي مقاس 30x45 -- الرمز 11"><i class="fa-brands fa-whatsapp"></i> <span data-translate="price-inquiry">استفسر عن السعر</span></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" id="location" style="background-color: var(--clr-offwhite); padding-bottom: 2rem;">
+        <h2 class="section-title animate-up" data-translate="location-title">موقعنا</h2>
+        <p class="section-subtitle animate-up" data-translate="location-subtitle">يسعدنا زيارتكم في معرضنا بكسلا السوق</p>
+        <div class="map-container animate-up" style="max-width: 1000px; margin: 0 auto; padding: 0 5%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15312.339241517865!2d36.3956891!3d15.4542319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x160f4eabd880fc27%3A0x3344b4139d37500!2sKassala%20Market!5e0!3m2!1sen!2s!4v1714489635033!5m2!1sen!2s" style="width: 100%; height: 350px; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: var(--shadow-sm);" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Global Floating WhatsApp Button -->
+    <a href="#" class="floating-whatsapp" target="_blank" title="تواصل معنا عبر الواتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content animate-up">
+            <div class="footer-col section-about">
+                <div class="footer-logo" style="display:flex; align-items:center; gap:12px; margin-bottom: 1rem; justify-content: flex-start;">
+                    <img src="images/logo.png" style="height:70px; width:auto; object-fit:contain; mix-blend-mode: screen;" alt="" onerror="this.style.display='none'">
+                </div>
+                <h4 data-translate="footer-about-title">من نحن</h4>
+                <p data-translate="footer-about-desc" style="max-width: 400px; line-height: 1.8;">معرض توتيل بوابتك لأرقى خامات السيراميك والبورسلين، نضع الفخامة والدقة في متناول يديك.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-contact-title">تواصل معنا</h4>
+                <p style="margin-bottom: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: var(--clr-gold); margin-left: 8px;"></i> <span data-translate="contact-address">السودان - كسلا - السوق</span></p>
+                <p><i class="fa-solid fa-phone" style="color: var(--clr-gold); margin-left: 8px;"></i> <span dir="ltr" data-translate="contact-phone">+249 12 870 2595</span></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-links-title">روابط سريعة</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="index.html#home" style="color:#ccc; text-decoration:none;" data-translate="nav-home">الرئيسية</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="products.html" style="color:#ccc; text-decoration:none;" data-translate="nav-products">منتجاتنا</a></li>
+                    <li><a href="index.html#about" style="color:#ccc; text-decoration:none;" data-translate="nav-about">من نحن</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" data-translate="footer-right">
+            جميع الحقوق محفوظة © 2026 توتيل للسيراميك والبورسلان.
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

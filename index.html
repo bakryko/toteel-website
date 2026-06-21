@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توتيل - للسيراميك والبورسلان الفاخر</title>
+    <meta name="description" content="معرض توتيل للسيراميك والبورسلان الفاخر. أفضل وأفخم أنواع السيراميك والبورسلان بمدينة بورتسودان (أو مدينتكم).">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="display:flex; align-items:center; gap:12px; text-decoration:none; flex-direction: row;">
+            <img src="images/logo.png" style="height:60px; width:auto; object-fit:contain; mix-blend-mode: multiply;" alt="" onerror="this.style.display='none'">
+            <div style="display:flex; flex-direction:column; line-height:1.1; text-align: right;">
+                <span class="font-en" style="font-size:1.8rem; font-weight:900; color:var(--clr-charcoal); letter-spacing: 1px;">TOTEEL</span>
+                <span data-translate="logo-subtitle" style="font-size:0.9rem; letter-spacing:0; color:var(--clr-gold); font-weight:bold;">للسيراميك والبورسلان</span>
+            </div>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="active" data-translate="nav-home">الرئيسية</a></li>
+            <li><a href="products.html" data-translate="nav-products">منتجاتنا</a></li>
+            <li><a href="#about" data-translate="nav-about">من نحن</a></li>
+            <li><a href="#contact" data-translate="nav-contact">التواصل</a></li>
+        </ul>
+
+        <div class="theme-controls">
+            <button class="theme-toggle" title="تغيير المظهر"><i class="fa-solid fa-moon"></i></button>
+            <button class="lang-toggle" title="Change Language">EN</button>
+        </div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content animate-up">
+            <h1 class="font-en" data-translate="hero-title">توتيل للسيراميك والبورسلان</h1>
+            <p class="subtitle font-ar" data-translate="hero-subtitle">ارتقِ بمساحتك مع أحدث وأرقى تشكيلات السيراميك العالمية الموثوقة لتصميم يدوم.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-gold" data-translate="hero-btn1">تصفح منتجاتنا المميزة <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#contact" class="btn btn-outline" data-translate="hero-btn2">تواصل واتساب</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="section" id="about">
+        <h2 class="section-title animate-up" data-translate="feat-title">لماذا تختار توتيل؟</h2>
+        <p class="section-subtitle animate-up" data-translate="feat-subtitle">نجمع بين جودة الصناعة وأناقة التصميم لنعطيك تجربة استثنائية لمساحتك.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-gem feature-icon"></i>
+                <h3 data-translate="feat-1-title">جودة وخيارات تناسب الجميع</h3>
+                <p data-translate="feat-1-desc">نوفر كافة الفرزات (فرز أول، ثاني، أو تجاري) لضمان توفر ما تبحث عنه بالسعر الذي يناسبك والجودة المطلوبة.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-cut feature-icon"></i>
+                <h3 data-translate="feat-2-title">قص ليزر دقيق</h3>
+                <p data-translate="feat-2-desc">جميع البورسلان والسيراميك بحواف مقصوصة بالليزر لتركيب بدون فواصل واضحة ولمظهر فخم.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-palette feature-icon"></i>
+                <h3 data-translate="feat-3-title">تصاميم حصرية</h3>
+                <p data-translate="feat-3-desc">مجموعة واسعة من الديكورات الجدارية والرخامية تناسب أصحاب الذوق الرفيع والمساحات المودرن.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories / Spaces Focus -->
+    <section class="section" id="categories" style="background-color: var(--clr-offwhite);">
+        <h2 class="section-title animate-up" data-translate="cat-title">أقسام المعرض</h2>
+        <p class="section-subtitle animate-up" data-translate="cat-subtitle">تصفح الأقسام المميزة لدينا</p>
+
+        <div class="categories">
+            <div class="category-card" onclick="window.location.href='products.html'">
+                <img src="images/1.jpeg" alt="بورسلان فاخر">
+                <div class="category-overlay">
+                    <h3 data-translate="cat-1-title">بورسلان فاخر</h3>
+                    <p data-translate="cat-1-desc">أرضيات وجدران صلبة بتصاميم رخامية حديثة</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html'">
+                <img src="images/7.jpeg" alt="سيراميك الجدران">
+                <div class="category-overlay">
+                    <h3 data-translate="cat-2-title">سيراميك جدران</h3>
+                    <p data-translate="cat-2-desc">لمسات دافئة وفخمة لحماماتك والمطابخ</p>
+                </div>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html'">
+                <img src="images/4.jpeg" alt="ديكورات وموزاييك">
+                <div class="category-overlay">
+                    <h3 data-translate="cat-3-title">ديكورات ولمسات فنية</h3>
+                    <p data-translate="cat-3-desc">قطع مميزة تضيف سحراً للجدران</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" id="location" style="background-color: var(--clr-offwhite); padding-bottom: 2rem;">
+        <h2 class="section-title animate-up" data-translate="location-title">موقعنا</h2>
+        <p class="section-subtitle animate-up" data-translate="location-subtitle">يسعدنا زيارتكم في معرضنا لاختيار الأنسب لكم</p>
+        <div class="map-container animate-up" style="max-width: 1000px; margin: 0 auto; padding: 0 5%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15312.339241517865!2d36.3956891!3d15.4542319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x160f4eabd880fc27%3A0x3344b4139d37500!2sKassala%20Market!5e0!3m2!1sen!2s!4v1714489635033!5m2!1sen!2s" style="width: 100%; height: 350px; border-radius: 8px; border: 2px solid var(--clr-gold); box-shadow: var(--shadow-sm);" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Global Floating WhatsApp Button -->
+    <a href="#" class="floating-whatsapp" target="_blank" title="تواصل معنا عبر الواتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content animate-up">
+            <div class="footer-col section-about">
+                <div class="footer-logo" style="display:flex; align-items:center; gap:12px; margin-bottom: 1rem; justify-content: flex-start;">
+                    <img src="images/logo.png" style="height:70px; width:auto; object-fit:contain; mix-blend-mode: screen;" alt="" onerror="this.style.display='none'">
+                </div>
+                <h4 data-translate="footer-about-title">من نحن</h4>
+                <p data-translate="footer-about-desc" style="max-width: 400px; line-height: 1.8;">معرض توتيل بوابتك لأرقى خامات السيراميك والبورسلين، نضع الفخامة والدقة في متناول يديك.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-contact-title">تواصل معنا</h4>
+                <p style="margin-bottom: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: var(--clr-gold); margin-left: 8px;"></i> <span data-translate="contact-address">السودان - كسلا - السوق</span></p>
+                <p><i class="fa-solid fa-phone" style="color: var(--clr-gold); margin-left: 8px;"></i> <span dir="ltr" data-translate="contact-phone">+249 12 870 2595</span></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-links-title">روابط سريعة</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="index.html#home" style="color:#ccc; text-decoration:none;" data-translate="nav-home">الرئيسية</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="products.html" style="color:#ccc; text-decoration:none;" data-translate="nav-products">منتجاتنا</a></li>
+                    <li><a href="index.html#about" style="color:#ccc; text-decoration:none;" data-translate="nav-about">من نحن</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" data-translate="footer-right">
+            جميع الحقوق محفوظة © 2026 توتيل للسيراميك والبورسلان.
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
