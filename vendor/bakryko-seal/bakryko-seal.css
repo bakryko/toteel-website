@@ -1,0 +1,25 @@
+bakryko-seal {
+  box-sizing:border-box; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:4px; inline-size:100%; block-size:142px; flex:none; isolation:isolate;
+  background:var(--bk-background,#faf6ef); color:var(--bk-ink,#321729);
+  font:normal 14px/20px system-ui,sans-serif; text-align:center;
+}
+@media (prefers-color-scheme:dark) { bakryko-seal:not([theme="light"]) {background:var(--bk-background,#251b25);color:var(--bk-ink,#faf6ef)} }
+bakryko-seal[theme="dark"] {background:var(--bk-background,#251b25);color:var(--bk-ink,#faf6ef)}
+bakryko-seal button {box-sizing:border-box; min-width:44px; min-height:44px; color:inherit; background:transparent; border:0; padding:0; margin:0; cursor:pointer; font:inherit; border-radius:4px}
+bakryko-seal button:focus-visible {outline:3px solid currentColor;outline-offset:2px}
+bakryko-seal .bk-mark {width:48px;height:48px;display:grid;place-items:center;user-select:none;-webkit-touch-callout:none}
+bakryko-seal .bk-name {letter-spacing:.06em;font-size:15px}
+bakryko-seal .bk-numbers {font-size:12px;line-height:16px;letter-spacing:.1em;font-variant-numeric:tabular-nums}
+bakryko-seal .bk-dialog {box-sizing:border-box;position:fixed;inset:0;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;padding:24px 0;border:0;background:#14101a;color:#f2ecf6;overflow:auto}
+bakryko-seal .bk-dialog[open] {display:flex;flex-direction:column;align-items:center;justify-content:center}
+bakryko-seal .bk-dialog::backdrop {background:#14101a}
+bakryko-seal .bk-close {position:absolute;inset-block-start:12px;inset-inline-start:12px;font-size:28px}
+bakryko-seal .bk-plants {box-sizing:border-box;display:flex;align-items:end;gap:clamp(12px,4vw,36px);max-width:100%;overflow-x:auto;padding:12px max(12px,calc(50vw - 320px)) 4px;border-bottom:1px solid #786d7c}
+bakryko-seal .bk-plant {flex:none;display:grid;justify-items:center;align-content:end;color:#c084fc;transition:transform .25s}
+bakryko-seal .bk-plant:first-child {color:#e58ab0}
+bakryko-seal .bk-plant::after {content:"";width:2px;height:clamp(40px,9vw,74px);background:currentColor;opacity:.55}
+bakryko-seal .bk-plant[aria-pressed="true"] {transform:translateY(-6px)}
+bakryko-seal .bk-caption {box-sizing:border-box;min-height:96px;max-width:26rem;padding:18px 16px 0}
+bakryko-seal .bk-caption > * {display:block}
+@media (prefers-reduced-motion:reduce) {bakryko-seal .bk-plant {transition:none}}

@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+"""Refresh the three static assets from the pinned private GitHub release."""
+from pathlib import Path
+from subprocess import run
+from tempfile import TemporaryDirectory
+import os
+
+TAG = "v1.0.0"
+REPO = "bakryko/bakryko-signature"
+DEST = Path(__file__).resolve().parents[1] / "vendor" / "bakryko-seal"
+FILES = ("bakryko-seal.svg", "bakryko-seal.js", "bakryko-seal.css")
+
+if __name__ == "__main__":
+    DEST.mkdir(parents=True, exist_ok=True)
+    with TemporaryDirectory(dir=DEST.parent) as temporary:
+        stage = Path(temporary)
+        run(["gh", "release", "download", TAG, "--repo", REPO, "--dir", str(stage),
+             *[arg for name in FILES for arg in ("--pattern", name)]], check=True)
+        for name in FILES:
+            if not (stage / name).stat().st_size:
+                raise ValueError(name)
+        for name in FILES:
+            os.replace(stage / name, DEST / name)
+    print(f"{REPO}@{TAG} -> {DEST}")
+

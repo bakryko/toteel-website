@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140">
+  <defs>
+    <path id="petal" d="M0,-32 C9,-31 15,-24 15,-16 C15,-8 8,-2 0,-2 C-8,-2 -15,-8 -15,-16 C-15,-24 -9,-31 0,-32Z"/>
+    <g id="rose" fill="none" stroke="currentColor" stroke-linejoin="round">
+      <g stroke-width="2.4">
+        <use href="#petal" transform="rotate(0)"/>
+        <use href="#petal" transform="rotate(51)"/>
+        <use href="#petal" transform="rotate(102)"/>
+        <use href="#petal" transform="rotate(153)"/>
+        <use href="#petal" transform="rotate(204)"/>
+        <use href="#petal" transform="rotate(255)"/>
+        <use href="#petal" transform="rotate(306)"/>
+      </g>
+      <g stroke-width="3.3" transform="rotate(26) scale(.64)">
+        <use href="#petal" transform="rotate(0)"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <g stroke-width="7" transform="rotate(45) scale(.3)">
+        <use href="#petal" transform="rotate(0)"/>
+        <use href="#petal" transform="rotate(90)"/>
+        <use href="#petal" transform="rotate(180)"/>
+        <use href="#petal" transform="rotate(270)"/>
+      </g>
+    </g>
+    <symbol id="bloom" viewBox="0 0 88 88"><use href="#rose" transform="translate(44 44)"/></symbol>
+    <symbol id="seal" viewBox="0 0 120 140">
+      <use href="#rose" transform="translate(82 42)"/>
+      <path d="M82,76 L82,100 C82,112 72,120 52,120 C32,120 22,112 22,103" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="52" cy="133" r="4.5" fill="currentColor"/>
+    </symbol>
+  </defs>
+  <use href="#seal" width="120" height="140"/>
+</svg>
